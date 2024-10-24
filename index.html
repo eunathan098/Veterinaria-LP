@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" href="./imagens/logo-pata-pet.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styleGlobal.css">
     <title>Bicho Feliz</title>
 </head>
@@ -17,13 +19,13 @@
             </div>
             <div class="container-header-links">
                 <ul>
-                    <li> <a href="#inicio">inicio</a> </li>
-                    <li> <a href="#sobre">sobre</a> </li>
+                    <li> <a href="#inicio"> inicio</a> </li>
+                    <li> <a href="#sobre"> sobre</a> </li>
                     <li> <a href="#servicos"> serviços </a> </li>
-                    <li> <a href="#contato"> contato </a>  </li>
+                    <li> <a href="#contato"> contato </a></li>
                 </ul>
                 <div class="container-header-contato">
-                    <img src="./imagens/whatsapp.png" alt="TELEFONE-EMPRESARIAL" height="25px">
+                    <img src="./imagens/whatsapp.png" alt="TELEFONE-EMPRESARIAL-FICTICIO" height="25px">
                     <h3> (11) 1234-5678</h3>
                 </div>
             </div>
@@ -31,8 +33,7 @@
     </header>
     <!-- Fim Header -->
     <!-- Sessão 1 -->
-    <section class="container-sesssao1" id="inicio">
-
+    <section class="container-sessao1" id="inicio">
         <div class="container-content">
             <div class="container-content-text">
                 <div>
@@ -55,25 +56,43 @@
 
     <section class="container-sessao2" id="sobre">
         <div class="container-text-img">
-            <div> 
-                <h3> Sobre </h3>
+            <div>
+                <h3> SOBRE NÓS </h3>
             </div>
             <div>
-                <img src="./imagens/veterinario1.jpg" alt="FOTO 1">
-                <img src="./imagens/veterinario2.jpg" alt="FOTO 2">
+                <img src="./imagens/veterinaria1.jpg" alt="FOTO 1">
+                <img src="./imagens/veterinaria2.jpg" alt="FOTO 2"><br><br>
+                <img src="./imagens/veterinaria3.jpg" alt="FOTO 2">
+                <img src="./imagens/veterinaria4.jpg" alt="FOTO 2">
             </div>
             <div class="container-text-sessao2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid sed nisi commodi iste eius id laborum dolore, ducimus voluptate voluptatem incidunt odio in dicta. Porro voluptates aliquid voluptas ducimus.</p>
+                <p>Na Bicho Legal, cuidamos do seu pet com todo o carinho e dedicação que ele merece.
+                    Somos uma clínica veterinária especializada em oferecer serviços de saúde e bem-estar para
+                    animais de estimação, com uma equipe de profissionais altamente qualificados e apaixonados por
+                    cuidar dos seus melhores amigos.
+                </p>
+                <p><br>
+                    <strong>Especialidades:</strong><br>
+                    Consultas: Realizamos exames completos para garantir a saúde e vitalidade do seu pet.<br>
+                    Vacinação: Protegemos seu bichinho contra doenças com vacinas seguras e eficientes.<br>
+                    Cirurgias: Nossa equipe realiza procedimentos cirúrgicos com a máxima segurança e tecnologia.<br>
+                    Exames de Diagnóstico: Oferecemos exames laboratoriais, ultrassom e raio-X para garantir
+                    diagnósticos precisos.
+                    Banho e Tosa: Seu pet merece ficar limpinho e estiloso com nossos serviços de higiene e
+                    estética.<br>
+                    Atendimento Emergencial: Estamos preparados para atender seu animalzinho em casos de urgências e
+                    emergências, 24 horas por dia.
+                </p>
             </div>
         </div>
     </section>
-    
-<!-- Sessao 3 -->
+
+    <!-- Sessao 3 -->
     <section class="container-sesssao3" id="servicos">
         <div>
             <div>
                 <h3 class="txt-services">
-                    Nossos Serviços 
+                    Nossos Serviços
                 </h3>
             </div>
             <div class="container-services-imagens">
@@ -95,62 +114,87 @@
             </div>
         </div>
     </section>
+
+    <section class="container-local">
+        <div class="container-localizacao">
+            <a
+                href="https://www.google.com.br/maps/@-23.7305856,-46.5338368,12z?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
+                <img src="./imagens/mapas-do-google.png" alt="LOCALIZAÇÃO CLINICA" height="150px">
+            </a>
+            <h3> Nossa localização </h3>
+        </div>
+
+    </section>
     <!-- Sessão 4 -->
-     <section class="container-sessao4">
+    <section class="container-sessao4">
         <form>
             <div class="campos">
-                <label> nome: </label>
+                <div class="container-label">
+                    <label> nome: </label>
+                </div>
                 <input type="text" placeholder="digite seu nome...">
             </div>
 
             <div class="campos">
-                <label> e-mail: </label>
+                <div class="container-label">
+                    <label> e-mail: </label>
+                </div>
                 <input type="email" placeholder="digite seu e-mail...">
             </div>
 
             <div class="campos">
-                <label> telefone: </label>
+                <div class="container-label">
+                    <label> telefone: </label>
+                </div>
                 <input type="tel" placeholder="digite seu telefone...">
-            </div>
-            <p> Escreva uma mensagem: </p>
+            </div><br>
+            <p> Escreva uma mensagem: </p><br>
             <textarea> </textarea>
 
-            <input type="submit" value="Enviar formulário">
+            <input type="submit" value="Enviar formulário" class="btn-enviar" id="btn-envio">
         </form>
-
-
-
-
-
-
-     </section>
-
-       
-           
-
-    
-
-
+    </section>
     <footer>
         <div class="container-text-footer">
-            <h1> direitos reservados @Nathancruz  2024®</h1>
+            <h1> direitos reservados @Nathancruz 2024®</h1>
         </div>
     </footer>
 
     <script>
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             const scrollPosition = window.scrollY
 
-            if(scrollPosition > 50){
+            if (scrollPosition > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         })
 
+        window.sr = ScrollReveal({ reset: true });
+        sr.reveal('.container-sessao1', { duration: 1500 });
 
+        sr.reveal('.container-sessao2', {
+            rotate: { x: 0, y: 80, z: 0 },
+            duration: 2000
+        });
 
+        sr.reveal('form', {
+            rotate: { x: 0, y: 80, z: 0 },
+            duration: 2000
+        })
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const botao = document.getElementById('btn-envio'); // ID corrigido
+
+            if (botao) {
+                botao.addEventListener('click', function (event) {
+                    event.preventDefault(); // Evita o envio automático do formulário
+                    alert("O formulário foi enviado. Obrigado!");
+                });
+            }
+        });
 
     </script>
 </body>

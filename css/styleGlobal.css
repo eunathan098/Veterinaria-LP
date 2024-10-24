@@ -81,11 +81,11 @@ nav .container-header-links ul li a:hover {
 }
 
 /* Sessão 1 */
-.container-sesssao1 {
+.container-sessao1 {
     display: flex;
     width: 100vw;
     padding: 100px 50px 0px 50px;
-    box-shadow: 10px 10px 100px -10px rgba(0, 0, 0, 0.133);
+    visibility: hidden;
 }
 
 .container-content {
@@ -155,7 +155,7 @@ span {
 
 .container-text-img div h3{
     color: rgba(0, 0, 0, 0.374);
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -164,7 +164,9 @@ span {
 }
 
 .container-text-sessao2 p{
-    color: rgba(0, 0, 0, 0.441);}
+    color: rgba(0, 0, 0, 0.441);
+    width: 600px;
+}
 
 
 
@@ -180,6 +182,7 @@ span {
 
 .txt-services{
     margin-bottom: 50px;
+    font-size: 30px;
     color: rgba(0, 0, 0, 0.373);
 }
 
@@ -196,9 +199,10 @@ span {
 }
 
 form{
-    background-color: rgb(150, 150, 246);
+    background-color: rgba(255, 255, 255, 0.842);
     padding: 20px;
     margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.406);
 }
 
 input{
@@ -208,12 +212,47 @@ input{
     border-bottom: 2px solid rgba(0, 0, 255, 0.472);
     outline: none;
 }
+
+.container-local{
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-localizacao{
+    display: flex;
+    color: rgba(7, 176, 7, 0.524);
+    gap: 10px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-localizacao img{
+    cursor: pointer;
+}
 /* Sessão 4 */
 .container-sessao4{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.container-label{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.btn-enviar{
+    margin-top: 10px;
+    background-color: rgb(145, 145, 244);
 }
 
 
@@ -239,30 +278,7 @@ footer h1{
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 /* Responsividade MOBILE */
-
-/* @media (min-width: 0px) and (max-width: 740px) {
-    .container-header-contato{
-        display: none;
-    }
-
-    .container-content div img{
-        padding: 10px;
-    }
-
-    .container-content-text div h2{
-        font-size: 25px;
-    }
-
-    .container-content div img{
-        height: 300px;
-    }
-
-    .container-btn button{
-        padding: 15px;
-    }
-} */
 
 @media (min-width: 320px) and (max-width: 480px) {
     .container-header-contato{
@@ -294,14 +310,14 @@ footer h1{
     }
 
     .container-text-img img{
-        height: 250px;
-    }
-
-    .container-text-img img{
         height: 180px;
     }
 
     .container-services-imagens div img{
         height: 70px;
+    }
+
+    .container-text-sessao2{
+        padding: 10px;
     }
 }
