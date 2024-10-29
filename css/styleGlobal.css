@@ -152,6 +152,12 @@ span {
     flex-direction: column;
 }
 
+.titulo-especialidades{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.41);
+}
+
 .container-text-img div {
     padding-bottom: 10px;
 }
@@ -276,6 +282,14 @@ iframe {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.container-calendar{
+    padding: 20px;
+}
+
+.container-calendar input{
+    padding: 20px;
+    font-size: 20px;
+}
 .btn-enviar {
     margin-top: 10px;
     color: white;
@@ -283,13 +297,6 @@ iframe {
     background-color: rgb(145, 145, 244);
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-textarea {
-    height: 80px;
-    width: 300px;
-    font-size: 18px;
-    color: blue;
 }
 
 footer {
@@ -356,6 +363,7 @@ footer h1 {
 
     .container-services-imagens div img {
         height: 70px;
+        margin: 13px;
     }
 
     .container-text-sessao2 {

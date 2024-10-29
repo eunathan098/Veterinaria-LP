@@ -74,7 +74,7 @@
                     cuidar dos seus melhores amigos.
                 </p>
                 <p><br>
-                    <strong>Especialidades:</strong><br><br>
+                    <strong><h1 class="titulo-especialidades">ESPECIALIDADES: </h1></strong><br><br>
                     Consultas: Realizamos exames completos para garantir a saúde e vitalidade do seu pet.<br>
                     Vacinação: Protegemos seu bichinho contra doenças com vacinas seguras e eficientes.<br>
                     Cirurgias: Nossa equipe realiza procedimentos cirúrgicos com a máxima segurança e tecnologia.<br>
@@ -145,24 +145,27 @@
                 <div class="container-label">
                     <label> nome: </label>
                 </div>
-                <input type="text" placeholder="digite seu nome...">
+                <input type="text" placeholder="digite seu nome..." required>
             </div>
 
             <div class="campos">
                 <div class="container-label">
                     <label> e-mail: </label>
                 </div>
-                <input type="email" placeholder="digite seu e-mail...">
+                <input type="email" placeholder="digite seu e-mail..." required>
             </div>
 
             <div class="campos">
                 <div class="container-label">
                     <label> telefone: </label>
                 </div>
-                <input type="tel" placeholder="digite seu telefone...">
+                <input type="tel" placeholder="digite seu telefone..." required>
             </div><br>
-            <p> Escreva uma mensagem: </p><br>
-            <textarea> </textarea>
+            <div class="container-calendar">
+                <h3> Selecione a data e horário </h3>
+               <input type="datetime-local" required>
+            </div>
+            
 
             <input type="submit" value="Agendar uma consulta" class="btn-enviar" id="btn-envio">
         </form>
