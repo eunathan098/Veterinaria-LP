@@ -267,6 +267,10 @@ iframe {
     margin-top: 10px;
 }
 
+.campos input{
+    font-size: 20px;
+}
+
 .container-label label {
     color: rgba(0, 0, 0, 0.386);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -284,6 +288,8 @@ iframe {
 textarea {
     height: 80px;
     width: 300px;
+    font-size: 18px;
+    color: blue;
 }
 
 footer {
