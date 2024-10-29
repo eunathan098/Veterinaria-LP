@@ -20,10 +20,15 @@ header {
     transition: background-color 0.3s ease-in-out;
 }
 
+.menu-header {
+    display: none;
+}
+
 /* Estilo quando o header rolar a página */
 header.scrolled {
     background-color: white;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque ao header */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombras para dar destaque ao header */
 }
 
 nav {
@@ -65,7 +70,6 @@ nav .container-header-links ul li a {
 nav .container-header-links ul li a:hover {
     color: rgb(150, 150, 246);
 }
-
 
 .container-header-contato {
     display: flex;
@@ -121,12 +125,13 @@ span {
 
 .container-btn button {
     border: none;
-    padding: 10px;
-    width: 200px;
+    padding: 15px;
+    width: 350px;
     color: white;
     background-color: rgb(150, 150, 246);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -135,44 +140,38 @@ span {
     background-color: white;
     border: 1px solid rgb(150, 150, 246);
 }
-
 /* Sessão 2 */
 
-.container-text-img{
+.container-text-img {
     display: flex;
-    padding: 50px 20px 25px 20px;
+    padding: 50px 20px 5px 20px;
     gap: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
-.container-text-img div{
-    padding-bottom: 50px;
+.container-text-img div {
+    padding-bottom: 10px;
 }
 
-.container-text-img div h3{
+.container-text-img div h3 {
     color: rgba(0, 0, 0, 0.374);
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container-text-img img{
+.container-text-img img {
     height: 250px;
 }
 
-.container-text-sessao2 p{
+.container-text-sessao2 p {
     color: rgba(0, 0, 0, 0.441);
-    width: 600px;
+    width: 700px;
 }
 
-
-
-
-
-.container-sesssao3{
+.container-sesssao3 {
     display: flex;
     padding: 50px;
     text-align: center;
@@ -180,32 +179,43 @@ span {
     justify-content: center;
 }
 
-.txt-services{
+.txt-services {
     margin-bottom: 50px;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.373);
 }
 
-.container-services-imagens{
+.container-services-imagens {
     display: flex;
 }
 
-.container-services-imagens div{
+.container-services-imagens div {
     gap: 30px
 }
 
-.container-services-imagens div img{
+.container-services-imagens div img {
     height: 150px;
 }
 
-form{
+form {
     background-color: rgba(255, 255, 255, 0.842);
     padding: 20px;
     margin-bottom: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.406);
+    border: 2px solid rgba(0, 0, 0, 0.133);
 }
 
-input{
+.form-titulo {
+    padding: 10px;
+    background-color: rgb(145, 145, 244);
+    border-radius: 10px;
+}
+
+.form-titulo h1 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
     padding: 10px;
     border: none;
     width: 100%;
@@ -213,7 +223,7 @@ input{
     outline: none;
 }
 
-.container-local{
+.container-local {
     display: flex;
     width: 100vw;
     text-align: center;
@@ -221,42 +231,62 @@ input{
     justify-content: center;
 }
 
-.container-localizacao{
+.container-localizacao {
     display: flex;
     color: rgba(7, 176, 7, 0.524);
-    gap: 10px;
+    gap: 30px;
     margin-bottom: 80px;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     align-items: center;
     flex-direction: column;
 }
 
-.container-localizacao img{
+.container-localizacao img {
     cursor: pointer;
 }
+
+iframe {
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+}
+
 /* Sessão 4 */
-.container-sessao4{
+.container-sessao4 {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.container-label{
+.container-label {
     display: flex;
     text-align: left;
     justify-content: left;
     margin-top: 10px;
 }
 
-.btn-enviar{
-    margin-top: 10px;
-    background-color: rgb(145, 145, 244);
+.container-label label {
+    color: rgba(0, 0, 0, 0.386);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.btn-enviar {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(145, 145, 244);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-footer{
+textarea {
+    height: 80px;
+    width: 300px;
+}
+
+footer {
     display: flex;
     text-align: center;
     align-items: center;
@@ -266,13 +296,13 @@ footer{
     background-color: rgb(150, 150, 246);
 }
 
-.container-text-footer{
+.container-text-footer {
     padding: 15px;
     border-radius: 100px;
     background-color: white;
 }
 
-footer h1{
+footer h1 {
     color: rgb(150, 150, 246);
     font-size: 14px;
     font-weight: bold;
@@ -281,43 +311,63 @@ footer h1{
 /* Responsividade MOBILE */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .container-header-contato{
+
+    .menu-header {
+        display: block;
+    }
+
+    .container-header-contato {
         display: none;
     }
 
-    .container-sesssao1{
+    .container-sesssao1 {
         padding-left: 100px;
         /* padding-right: 20px; */
     }
 
-    .container-content-text{
+    .container-content-text {
         position: absolute;
         margin-top: 70px;
         margin-right: 220px;
     }
 
-
-    .container-content-text div h2{
+    .container-content-text div h2 {
         font-size: 20px;
     }
 
-    .container-content div img{
+    .container-content div img {
         height: 250px;
     }
 
-    .container-btn button{
+    .container-btn button {
         padding: 10px;
+        width: 200px;
     }
 
-    .container-text-img img{
+    .container-text-img img {
         height: 180px;
     }
 
-    .container-services-imagens div img{
+    .container-services-imagens div img {
         height: 70px;
     }
 
-    .container-text-sessao2{
+    .container-text-sessao2 {
+        text-align: center;
         padding: 10px;
+        width: 300px;
+    }
+
+    .container-text-sessao2 p {
+        padding: 10px;
+        width: 300px;
+    }
+
+    .icone-map {
+        height: 100px;
+    }
+
+    iframe {
+        width: 350px;
     }
 }

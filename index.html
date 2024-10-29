@@ -19,19 +19,21 @@
             </div>
             <div class="container-header-links">
                 <ul>
-                    <li> <a href="#inicio"> inicio</a> </li>
-                    <li> <a href="#sobre"> sobre</a> </li>
-                    <li> <a href="#servicos"> serviços </a> </li>
-                    <li> <a href="#contato"> contato </a></li>
+                    <li> <a href="#inicio"> Inicio </a> </li>
+                    <li> <a href="#sobre"> Sobre </a> </li>
+                    <li> <a href="#especialidades"> Especialidades </a> </li>
+                    <li> <a href="#contato"> Contato </a></li>
                 </ul>
                 <div class="container-header-contato">
                     <img src="./imagens/whatsapp.png" alt="TELEFONE-EMPRESARIAL-FICTICIO" height="25px">
                     <h3> (11) 1234-5678</h3>
+                    <img class="menu-header" src="./imagens/menu-lateral.png" alt="menu-lateral-mobile" height="30px">
                 </div>
             </div>
         </nav>
     </header>
     <!-- Fim Header -->
+
     <!-- Sessão 1 -->
     <section class="container-sessao1" id="inicio">
         <div class="container-content">
@@ -66,13 +68,13 @@
                 <img src="./imagens/veterinaria4.jpg" alt="FOTO 2">
             </div>
             <div class="container-text-sessao2">
-                <p>Na Bicho Legal, cuidamos do seu pet com todo o carinho e dedicação que ele merece.
+                <p>Na <strong>Bicho Legal</strong>, cuidamos do seu pet com todo o carinho e dedicação que ele merece.
                     Somos uma clínica veterinária especializada em oferecer serviços de saúde e bem-estar para
                     animais de estimação, com uma equipe de profissionais altamente qualificados e apaixonados por
                     cuidar dos seus melhores amigos.
                 </p>
                 <p><br>
-                    <strong>Especialidades:</strong><br>
+                    <strong>Especialidades:</strong><br><br>
                     Consultas: Realizamos exames completos para garantir a saúde e vitalidade do seu pet.<br>
                     Vacinação: Protegemos seu bichinho contra doenças com vacinas seguras e eficientes.<br>
                     Cirurgias: Nossa equipe realiza procedimentos cirúrgicos com a máxima segurança e tecnologia.<br>
@@ -88,7 +90,7 @@
     </section>
 
     <!-- Sessao 3 -->
-    <section class="container-sesssao3" id="servicos">
+    <section class="container-sesssao3" id="especialidades">
         <div>
             <div>
                 <h3 class="txt-services">
@@ -115,19 +117,30 @@
         </div>
     </section>
 
-    <section class="container-local">
+    <section class="container-local" id="localizacao">
         <div class="container-localizacao">
-            <a
-                href="https://www.google.com.br/maps/@-23.7305856,-46.5338368,12z?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D">
-                <img src="./imagens/mapas-do-google.png" alt="LOCALIZAÇÃO CLINICA" height="150px">
-            </a>
-            <h3> Nossa localização </h3>
+            <div class="local-info">
+                <a href="https://www.google.com/maps/@-23.7305856,-46.5338368,12z?entry=ttu" target="_blank">
+                    <img class="icone-map" src="./imagens/mapas-do-google.png" alt="LOCALIZAÇÃO CLINICA"
+                        height="150px"><br><br>
+                </a>
+                <h3> Nossa localização </h3>
+                <p>Rua fictícia, 123 - Bairro, Cidade - SP</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.3899636747416!2d-122.40641748468297!3d37.78583497975625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a72d3b4f%3A0x4b9bdf93d2d7387b!2s1%20Market%20St%2C%20San%20Francisco%2C%20CA%2094105%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1590201586068!5m2!1spt-BR!2sbr"
+                width="100%" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="map-iframe">
+            </iframe>
         </div>
-
     </section>
+
     <!-- Sessão 4 -->
     <section class="container-sessao4">
         <form>
+            <div class="form-titulo">
+                <h1> Agendamento </h1>
+            </div>
             <div class="campos">
                 <div class="container-label">
                     <label> nome: </label>
@@ -151,12 +164,12 @@
             <p> Escreva uma mensagem: </p><br>
             <textarea> </textarea>
 
-            <input type="submit" value="Enviar formulário" class="btn-enviar" id="btn-envio">
+            <input type="submit" value="Agendar uma consulta" class="btn-enviar" id="btn-envio">
         </form>
     </section>
     <footer>
         <div class="container-text-footer">
-            <h1> direitos reservados @Nathancruz 2024®</h1>
+            <h1>2024® DEV NATHAN CRUZ | Todos os direitos reservados </h1>
         </div>
     </footer>
 
