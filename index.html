@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header></header>
         <nav>
             <div>
                 <img src="./imagens/logo-pata-pet.png" alt="LOGOTIPO-HEADER" height="30px">
@@ -33,6 +33,8 @@
         </nav>
     </header>
     <!-- Fim Header -->
+     <!-- Logo flutuante do Whatsapp -->
+     <img class="logo-flutuante-whatsapp" src="./imagens/logo-whatsapp.png" alt="Logo flutuante Whatsapp" height="40px">
 
     <!-- Sessão 1 -->
     <section class="container-sessao1" id="inicio">
@@ -74,7 +76,7 @@
                     cuidar dos seus melhores amigos.
                 </p>
                 <p><br>
-                    <strong><h1 class="titulo-especialidades">ESPECIALIDADES: </h1></strong><br><br>
+                    <strong><h1 class="titulo-especialidades">ESPECIALIDADES </h1></strong><br><br>
                     Consultas: Realizamos exames completos para garantir a saúde e vitalidade do seu pet.<br>
                     Vacinação: Protegemos seu bichinho contra doenças com vacinas seguras e eficientes.<br>
                     Cirurgias: Nossa equipe realiza procedimentos cirúrgicos com a máxima segurança e tecnologia.<br>
@@ -136,7 +138,7 @@
     </section>
 
     <!-- Sessão 4 -->
-    <section class="container-sessao4">
+    <section class="container-sessao4" id="contato">
         <form>
             <div class="form-titulo">
                 <h1> Agendamento </h1>
@@ -159,7 +161,7 @@
                 <div class="container-label">
                     <label> telefone: </label>
                 </div>
-                <input type="tel" placeholder="digite seu telefone..." required>
+                <input type="tel" placeholder="(xx) xxxx-xxxx" required id="phone">
             </div><br>
             <div class="container-calendar">
                 <h3> Selecione a data e horário </h3>
@@ -211,6 +213,30 @@
                 });
             }
         });
+
+        // Validação do campo de telefone para formato compativel:
+        document.getElementById("phone").addEventListener("input", function (e) {
+                let input = e.target.value;
+
+                //Remove o que não for número
+                input = input.replace(/\D/g, '');
+
+                //Formatação (XX) XXXXX-XXXX
+                if (input.length > 10) {
+                    input = input.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+                } else if (input.length > 5) {
+                    input = input.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+                } else if (input.length > 2) {
+                    input = input.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+                } else {
+                    input = input.replace(/^(\d{0,2})/, '($1)');
+                }
+
+                // Atualiza o valor do campo
+                e.target.value = input;
+            });
+
+
 
     </script>
 </body>

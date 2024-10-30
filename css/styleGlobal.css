@@ -84,6 +84,13 @@ nav .container-header-links ul li a:hover {
     cursor: pointer;
 }
 
+.logo-flutuante-whatsapp{
+    display: none;
+    position: fixed;
+    top: 92%;
+    left: 5%;
+}
+
 /* Sessão 1 */
 .container-sessao1 {
     display: flex;
@@ -153,9 +160,9 @@ span {
 }
 
 .titulo-especialidades{
-    font-size: 20px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.41);
+    color: rgba(0, 0, 0, 0.374);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container-text-img div {
@@ -193,6 +200,7 @@ span {
 
 .container-services-imagens {
     display: flex;
+    gap: 50px;
 }
 
 .container-services-imagens div {
@@ -206,6 +214,7 @@ span {
 form {
     background-color: rgba(255, 255, 255, 0.842);
     padding: 20px;
+    width: 800px;
     margin-bottom: 20px;
     border: 2px solid rgba(0, 0, 0, 0.133);
 }
@@ -253,8 +262,8 @@ input {
 }
 
 iframe {
-    height: 300px;
-    width: 500px;
+    height: 500px;
+    width: 800px;
     margin-top: 30px;
 }
 
@@ -360,9 +369,12 @@ footer h1 {
     .container-text-img img {
         height: 180px;
     }
+    .container-services-imagens{
+        gap: 5px;
+    }
 
     .container-services-imagens div img {
-        height: 70px;
+        height: 50px;
         margin: 13px;
     }
 
@@ -378,10 +390,24 @@ footer h1 {
     }
 
     .icone-map {
-        height: 100px;
+        height: 70px;
     }
 
     iframe {
+        width: 330px;
+    }
+
+    form{
         width: 350px;
+    }
+
+    header{
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .logo-flutuante-whatsapp{
+        display: block;
+        z-index: 1001;
     }
 }
